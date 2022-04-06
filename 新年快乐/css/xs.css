@@ -1,0 +1,15 @@
+*{
+	
+	font-size: 30px;
+}
+.xnh{
+	color: #FF0000;
+	font-weight: bold;
+}
+img{
+	width: 10%;
+	height: 20%;
+	position: absolute;
+	top: 200px;
+	left: 1350px;
+}
