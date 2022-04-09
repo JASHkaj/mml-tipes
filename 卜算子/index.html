@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" type="text/css" href="css/dmaku.css"/>
+		<title>卿</title>
+		<meta name="description" content="卿" /> 
+		<meta name="keywords" content="卿" />
+	</head>
+	<body>
+		<header>
+			<p class="p1">《卜算子·我住长江头》</p>
+			<p  class="p2">宋.李之仪</p>
+		</header>
+		<article>
+			<p class="text" id="text">我住长江尾，卿住长江头。日日思卿不见卿，共饮长江水。
+此水几时休，此恨何时已。只愿卿心似我心，定不负相思意。</p>
+			<button id="btn" ele-range>思</button>
+		</article>
+		<script src="js/dmaku.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			var resetbtn = document.getElementById("btn");
+			var neontext = new Neontext("text");
+			var btn = new Neontext("btn");
+			neontext.render.run();
+			btn.render.run();
+			resetbtn.addEventListener("click",function(){
+				neontext.render.killer();
+				btn.render.killer();
+			})
+		</script>
+	</body>
+</html>
